@@ -1,0 +1,60 @@
+:root {
+  --floorHeght: 80px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100wh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#MyElevatorSection {
+  position: relative;
+}
+
+.floor {
+  border-bottom: 5px solid #444;
+  width: 500px;
+  height: var(--floorHeght);
+}
+
+.elevator {
+  height: var(--floorHeght);
+  width: var(--floorHeght);
+  position: absolute;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  left: 90px;
+  border: 5px groove #683838;
+}
+
+#inputSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+}
+
+#inputSection input {
+  font-size: 30px;
+}
+
+#inputSection button {
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
